@@ -3,6 +3,7 @@ import './App.css';
 import Home from './screens/Home';
 import { BrowserRouter as Router, Routes,Route, Link} from 'react-router-dom'
 import Login from './screens/Login';
+import About from './screens/About';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
     <Routes> 
     <Route exact path='/' element={<Home/>}></Route>
     <Route exact path='/login' element={<Login/>} />
+    <Route exact path='/about' element={<About/>} />
+    
     </Routes>
       {/* <Home /> */}
     </div>
